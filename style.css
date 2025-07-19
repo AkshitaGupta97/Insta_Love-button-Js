@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilory';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51, 55, 62);
+}
+.container {
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 10px 12px 14px rgb(124, 130, 141);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.container img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+
+}
+.container #heart {
+    color: white;
+    font-size: 65px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50) scale(0);  /* for hiding the image*/
+    opacity: 0;
+    transition:  transform ease 0.6s, opacity 0.6s ease;
+}
